@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Login</title>
+<link rel="stylesheet" href="resources/css/style.css">
+<script type="text/javascript">
+	function check(form) {
+		if (document.forms.loginForm.userName.value == "") {
+			alert("请输入用户名！");
+			document.forms.loginForm.userName.focus();
+			return false;
+		}
+		if (document.forms.loginForm.passWord.value == "") {
+			alert("请输入密码！");
+			document.forms.loginForm.passWord.focus();
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+			<h3 style="display: inline">11539 张超</h3>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="loginform cf">
+		<form name="login" action="login.do" method="post"
+			accept-charset="utf-8">
+			<ul>
+				<h4>电影租赁管理系统</h4>
+				<li><label for="username">UserName</label> <input type="text"
+					name="userName" placeholder="username" required> <label
+					for="password">Password</label> <input type="password"
+					name="passWord" placeholder="password" required><input
+					type="submit" value="登录" /><input type="reset" value="重置" /></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
